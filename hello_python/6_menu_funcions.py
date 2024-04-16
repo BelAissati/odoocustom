@@ -34,3 +34,6 @@ while (opcio!=0):
     opcio=menu()
 
 print ("Fins la pròxima!")
+
+
+
