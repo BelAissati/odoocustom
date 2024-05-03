@@ -1,2 +1,0 @@
-Avui estem treballant en el mòdul 10 - SGE.
-Treballem amb Python per poder desenvolupar mòduls en Odoo.

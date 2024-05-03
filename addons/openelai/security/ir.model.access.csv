@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_openelai_curs,openelai.curs,model_openelai_curs,base.group_user,1,1,1,1
+access_openelai_materia,openelai.materia,model_openelai_materia,base.group_user,1,1,1,1

@@ -1,0 +1,32 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="openelai.list_materia">
+            <field name="name">openelai list</field>
+            <field name="model">openelai.materia</field>
+            <field name="arch" type="xml">
+                <tree string="Arbre de matèria">
+                    <field name="name"/>
+                    <field name="description"/>
+                    <!-- <field name="curs_id"/>
+                    <field name="num_alumnes" sum="Total "/>
+                    <field name="professor_ids" widget="many2many_tags" string="Professors"/> -->
+                </tree>
+            </field>
+        </record>
+
+
+        <!-- actions opening views on models -->
+        <record model="ir.actions.act_window" id="openelai.action_window_materia">
+            <field name="name">Llistat de Matèries</field>
+            <field name="res_model">openelai.materia</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- actions -->
+        <menuitem name="Llistat de Matèries" id="openelai.menu_list_materia" parent="openelai.menu" action="openelai.action_window_materia"/>
+
+
+
+    </data>
+</odoo>

@@ -1,0 +1,28 @@
+<odoo>
+    <data>
+        <!-- actions opening views on models -->
+        <record model="ir.ui.view" id="openelai.list_curs">
+            <field name="name">Llistat de Cursos</field>
+            <field name="model">openelai.curs</field>
+            <field name="arch" type="xml">
+              <tree string="Llistat de cursos">
+                <field name="name"/>
+                <field name="nivell"/>
+                <!-- <field name="inici_curs"/>
+                <field name="materia_ids" widget="many2many_tags"/> -->
+              </tree>
+            </field>
+        </record>
+        <!-- actions -->
+        <record model="ir.actions.act_window" id="openelai.action_window_curs">
+            <field name="name">Llistat de Curs</field>
+            <field name="res_model">openelai.curs</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem name="Llistat de Cursos" id="openelai.menu_list_curs" parent="openelai.menu" action="openelai.action_window_curs"/>
+
+
+
+    </data>
+</odoo>
